@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<div class = "unit group" id = "contact">
+  <h1 class = "title" >聯絡資訊 － <span class = "noLetterSpace">Contact Me</span></h1>
+  <hr class = "line">
+
+  <div class="intro" id="introduction">
+    <p>可以聯繫我，不過我不確定我能不能收到呦❤️ </p>
+
+</div>
+
+  <div class = "sendMail">
+    <a id = "mailTo"></a>
+    <form  id = "mailForm" class = "ui form" accept-charset="utf-8">
+      <div class = field>
+        <label>姓名：</label>
+        <input type="text" name = "Name" placeholder="姓名">
+      </div>
+      <div class = field>
+        <label>Email：</label>
+        <input type="email" name = "Email" placeholder="Email">
+      </div>
+      <div class = field>
+        <label>主旨：</label>
+        <input type="text" name = "Subject" placeholder="主旨">
+      </div>
+      <div class = field>
+        <label>你想說什麼(字數限制於210字以內)：</label>
+        <textarea name = "content" cols="50" maxlength="210"></textarea>
+      </div>
+      <div class="ui success message" id = "seccessMessage">
+        <div class="header">信件成功寄出囉!</div>
+        <p>謝謝你的回覆，我看到後會盡快回復的XD</p>
+      </div>
+      <div class="ui error message" id = "errorMessage">
+        <div class="header">可能有些忘記填或輸入錯誤喔!</div>
+        <p></p>
+      </div>
+      <div class = field>
+        <button class = "fluid ui button" type="button" onclick='validation()'>Send</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
+
